@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19455" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19455"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ShareViewController" customModule="Fling" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="dNP-YM-Vnr" id="kzc-L3-lMS"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <userDefaultsController representsSharedInstance="YES" id="mni-eG-0m2"/>
+        <tabView focusRingType="none" drawsBackground="NO" allowsTruncatedLabels="NO" type="noTabsBezelBorder" initialItem="JhM-mW-TE2" translatesAutoresizingMaskIntoConstraints="NO" id="dNP-YM-Vnr" userLabel="TabView">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="139"/>
+            <font key="font" metaFont="system"/>
+            <tabViewItems>
+                <tabViewItem label="Upload" identifier="" id="JhM-mW-TE2" userLabel="Upload">
+                    <view key="view" focusRingType="none" id="9uB-M2-fX6">
+                        <rect key="frame" x="10" y="7" width="357" height="119"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <gridView identifier="ConfirmView" xPlacement="center" yPlacement="center" rowAlignment="none" id="I6P-iJ-A11">
+                                <rect key="frame" x="-6" y="0.0" width="369" height="124"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <rows>
+                                    <gridRow height="37" id="W3k-79-iFG"/>
+                                    <gridRow height="38" id="WSJ-ci-z9g"/>
+                                    <gridRow height="37" id="Ef3-0S-Dbq"/>
+                                </rows>
+                                <columns>
+                                    <gridColumn width="119" id="cJw-xB-gC9"/>
+                                    <gridColumn width="119" id="Iwi-jv-sDR"/>
+                                    <gridColumn width="119" id="LLO-ps-aFg"/>
+                                </columns>
+                                <gridCells>
+                                    <gridCell row="W3k-79-iFG" column="cJw-xB-gC9" id="JvU-cB-fCi"/>
+                                    <gridCell row="W3k-79-iFG" column="Iwi-jv-sDR" id="oxX-NM-A6q">
+                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qbR-Jj-5ai">
+                                            <rect key="frame" x="158" y="98" width="54" height="16"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Upload?" id="dPA-J0-pjj">
+                                                <font key="font" usesAppearanceFont="YES"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </gridCell>
+                                    <gridCell row="W3k-79-iFG" column="LLO-ps-aFg" id="Mci-zg-6Bh"/>
+                                    <gridCell row="WSJ-ci-z9g" column="cJw-xB-gC9" id="E9Q-Ub-MKZ"/>
+                                    <gridCell row="WSJ-ci-z9g" column="Iwi-jv-sDR" id="BPp-wx-2a5">
+                                        <progressIndicator key="contentView" maxValue="100" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="6de-rM-dlM">
+                                            <rect key="frame" x="169" y="46" width="32" height="32"/>
+                                            <connections>
+                                                <binding destination="-2" name="animate" keyPath="self.uploading" id="d7S-kh-gD2"/>
+                                                <binding destination="-2" name="hidden" keyPath="self.uploading" id="yvH-N2-9am">
+                                                    <dictionary key="options">
+                                                        <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                                    </dictionary>
+                                                </binding>
+                                            </connections>
+                                        </progressIndicator>
+                                    </gridCell>
+                                    <gridCell row="WSJ-ci-z9g" column="LLO-ps-aFg" id="hxK-je-98t"/>
+                                    <gridCell row="Ef3-0S-Dbq" column="cJw-xB-gC9" id="IMC-2E-ufH">
+                                        <button key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="72q-1W-itt">
+                                            <rect key="frame" x="22" y="2" width="76" height="32"/>
+                                            <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="d0B-eV-pY3">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                                <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="cancel:" target="-2" id="yMl-CK-mLk"/>
+                                                <binding destination="-2" name="enabled" keyPath="self.disableButtons" id="QqF-5N-3bs">
+                                                    <dictionary key="options">
+                                                        <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                                    </dictionary>
+                                                </binding>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="Ef3-0S-Dbq" column="Iwi-jv-sDR" id="gcM-Dj-Fzt"/>
+                                    <gridCell row="Ef3-0S-Dbq" column="LLO-ps-aFg" id="PaK-kH-t4q">
+                                        <button key="contentView" focusRingType="exterior" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JOa-oo-U4n">
+                                            <rect key="frame" x="261" y="2" width="98" height="32"/>
+                                            <buttonCell key="cell" type="push" title="Upload" bezelStyle="rounded" image="icloud.and.arrow.up.fill" catalog="system" imagePosition="leading" alignment="center" borderStyle="border" focusRingType="exterior" imageScaling="proportionallyDown" inset="2" id="Qdx-uO-ZpV">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <color key="bezelColor" name="AccentColor"/>
+                                            <connections>
+                                                <action selector="send:" target="-2" id="CIL-VI-iBq"/>
+                                                <binding destination="-2" name="enabled" keyPath="self.disableButtons" id="f9X-vN-YpH">
+                                                    <dictionary key="options">
+                                                        <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                                    </dictionary>
+                                                </binding>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                </gridCells>
+                            </gridView>
+                        </subviews>
+                    </view>
+                </tabViewItem>
+                <tabViewItem label="Success" identifier="" id="RgL-b8-MHc" userLabel="Success">
+                    <view key="view" id="05W-Ru-3m2">
+                        <rect key="frame" x="10" y="7" width="357" height="119"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sw0-Z9-5Mv">
+                                <rect key="frame" x="129" y="34.5" width="99.5" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="98.5" id="aKF-wW-Aha"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="8iA-Mr-Rgg">
+                                    <imageReference key="image" image="checkmark.icloud" catalog="system" symbolScale="large"/>
+                                </imageCell>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WNT-HE-C8f">
+                                <rect key="frame" x="102" y="33" width="154" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Link copied to clipboard!" id="ZrX-vJ-UCp">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="sw0-Z9-5Mv" firstAttribute="top" secondItem="05W-Ru-3m2" secondAttribute="top" constant="10.5" id="6PG-eO-wgf"/>
+                            <constraint firstItem="WNT-HE-C8f" firstAttribute="centerX" secondItem="sw0-Z9-5Mv" secondAttribute="centerX" id="8Zc-Rp-RuN"/>
+                            <constraint firstAttribute="bottom" secondItem="sw0-Z9-5Mv" secondAttribute="bottom" constant="37.5" id="Eem-pz-rjM"/>
+                            <constraint firstItem="WNT-HE-C8f" firstAttribute="top" secondItem="05W-Ru-3m2" secondAttribute="top" constant="70" id="X2h-Ug-uhx"/>
+                            <constraint firstItem="WNT-HE-C8f" firstAttribute="centerX" secondItem="05W-Ru-3m2" secondAttribute="centerX" id="rtZ-AX-kEW"/>
+                        </constraints>
+                    </view>
+                </tabViewItem>
+                <tabViewItem label="Error" identifier="" id="Xmj-56-e21">
+                    <view key="view" id="BwC-8x-tnE">
+                        <rect key="frame" x="10" y="7" width="357" height="119"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kz1-0c-0Oh">
+                                <rect key="frame" x="128" y="35" width="99" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="98.5" id="56r-Nn-N3v"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Dql-90-bae">
+                                    <imageReference key="image" image="exclamationmark.circle.fill" catalog="system" symbolScale="large"/>
+                                </imageCell>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LM3-Ok-Mij">
+                                <rect key="frame" x="130" y="37" width="95" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Upload Failed!" id="LqL-Zx-L9A">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <binding destination="-2" name="value" keyPath="self.errorMessage" id="2cA-wv-BfC"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="kz1-0c-0Oh" secondAttribute="bottom" constant="40" id="3cq-5U-arx"/>
+                            <constraint firstItem="kz1-0c-0Oh" firstAttribute="centerX" secondItem="LM3-Ok-Mij" secondAttribute="centerX" id="PNf-r6-mJH"/>
+                            <constraint firstItem="kz1-0c-0Oh" firstAttribute="top" secondItem="BwC-8x-tnE" secondAttribute="top" constant="8" id="UyX-ZK-AkK"/>
+                            <constraint firstItem="kz1-0c-0Oh" firstAttribute="leading" secondItem="BwC-8x-tnE" secondAttribute="leading" constant="128" id="Vvi-ex-hp9"/>
+                            <constraint firstItem="kz1-0c-0Oh" firstAttribute="baseline" secondItem="LM3-Ok-Mij" secondAttribute="baseline" id="jez-FG-oUQ"/>
+                        </constraints>
+                    </view>
+                </tabViewItem>
+            </tabViewItems>
+            <connections>
+                <binding destination="-2" name="selectedIndex" keyPath="self.tabViewIndex" id="4hG-8G-SqO"/>
+            </connections>
+            <point key="canvasLocation" x="-7.5" y="-474.5"/>
+        </tabView>
+    </objects>
+    <resources>
+        <image name="checkmark.icloud" catalog="system" width="24" height="17"/>
+        <image name="exclamationmark.circle.fill" catalog="system" width="20" height="20"/>
+        <image name="icloud.and.arrow.up.fill" catalog="system" width="18" height="16"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

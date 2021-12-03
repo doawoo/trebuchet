@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F39BCA72758292B00B5AA62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F39BCA62758292B00B5AA62 /* AppDelegate.swift */; };
+		2F39BCA92758292B00B5AA62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F39BCA82758292B00B5AA62 /* ViewController.swift */; };
+		2F39BCAB2758292C00B5AA62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F39BCAA2758292C00B5AA62 /* Assets.xcassets */; };
+		2F39BCAE2758292C00B5AA62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F39BCAC2758292C00B5AA62 /* Main.storyboard */; };
+		2F39BCD527583C1D00B5AA62 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F39BCD427583C1D00B5AA62 /* Keychain.swift */; };
+		2F39BCDE275868CB00B5AA62 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2F39BCDD275868CB00B5AA62 /* icon.icns */; };
+		2F39BCE0275868CB00B5AA62 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F39BCDF275868CB00B5AA62 /* ShareViewController.swift */; };
+		2F39BCE3275868CB00B5AA62 /* ShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F39BCE1275868CB00B5AA62 /* ShareViewController.xib */; };
+		2F39BCE8275868CB00B5AA62 /* Fling.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2F39BCDB275868CB00B5AA62 /* Fling.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2F39BCED275868D700B5AA62 /* Net.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F39BCEC275868D700B5AA62 /* Net.swift */; };
+		2F39BCEF275868E100B5AA62 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F39BCEE275868E100B5AA62 /* Error.swift */; };
+		2F39BCF0275868F500B5AA62 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F39BCD427583C1D00B5AA62 /* Keychain.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F39BCE6275868CB00B5AA62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F39BC9B2758292B00B5AA62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F39BCDA275868CB00B5AA62;
+			remoteInfo = Fling;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2F39BCCF27582D6A00B5AA62 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2F39BCE8275868CB00B5AA62 /* Fling.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2F39BCA32758292B00B5AA62 /* trebuchet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trebuchet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F39BCA62758292B00B5AA62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2F39BCA82758292B00B5AA62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2F39BCAA2758292C00B5AA62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F39BCAD2758292C00B5AA62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F39BCAF2758292C00B5AA62 /* trebuchet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = trebuchet.entitlements; sourceTree = "<group>"; };
+		2F39BCD427583C1D00B5AA62 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		2F39BCDB275868CB00B5AA62 /* Fling.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Fling.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F39BCDD275868CB00B5AA62 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		2F39BCDF275868CB00B5AA62 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		2F39BCE2275868CB00B5AA62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ShareViewController.xib; sourceTree = "<group>"; };
+		2F39BCE4275868CB00B5AA62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F39BCE5275868CB00B5AA62 /* Fling.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fling.entitlements; sourceTree = "<group>"; };
+		2F39BCEC275868D700B5AA62 /* Net.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Net.swift; sourceTree = "<group>"; };
+		2F39BCEE275868E100B5AA62 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		2FED9CE72759218A005A9A58 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F39BCA02758292B00B5AA62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F39BCD8275868CB00B5AA62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F39BC9A2758292B00B5AA62 = {
+			isa = PBXGroup;
+			children = (
+				2FED9CE72759218A005A9A58 /* README.md */,
+				2F39BCB52758294A00B5AA62 /* common */,
+				2F39BCA52758292B00B5AA62 /* trebuchet */,
+				2F39BCDC275868CB00B5AA62 /* Fling */,
+				2F39BCA42758292B00B5AA62 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F39BCA42758292B00B5AA62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F39BCA32758292B00B5AA62 /* trebuchet.app */,
+				2F39BCDB275868CB00B5AA62 /* Fling.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F39BCA52758292B00B5AA62 /* trebuchet */ = {
+			isa = PBXGroup;
+			children = (
+				2F39BCA62758292B00B5AA62 /* AppDelegate.swift */,
+				2F39BCA82758292B00B5AA62 /* ViewController.swift */,
+				2F39BCAA2758292C00B5AA62 /* Assets.xcassets */,
+				2F39BCAC2758292C00B5AA62 /* Main.storyboard */,
+				2F39BCAF2758292C00B5AA62 /* trebuchet.entitlements */,
+			);
+			path = trebuchet;
+			sourceTree = "<group>";
+		};
+		2F39BCB52758294A00B5AA62 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				2F39BCD427583C1D00B5AA62 /* Keychain.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		2F39BCDC275868CB00B5AA62 /* Fling */ = {
+			isa = PBXGroup;
+			children = (
+				2F39BCDD275868CB00B5AA62 /* icon.icns */,
+				2F39BCDF275868CB00B5AA62 /* ShareViewController.swift */,
+				2F39BCE1275868CB00B5AA62 /* ShareViewController.xib */,
+				2F39BCE4275868CB00B5AA62 /* Info.plist */,
+				2F39BCE5275868CB00B5AA62 /* Fling.entitlements */,
+				2F39BCEC275868D700B5AA62 /* Net.swift */,
+				2F39BCEE275868E100B5AA62 /* Error.swift */,
+			);
+			path = Fling;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F39BCA22758292B00B5AA62 /* trebuchet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F39BCB22758292C00B5AA62 /* Build configuration list for PBXNativeTarget "trebuchet" */;
+			buildPhases = (
+				2F39BC9F2758292B00B5AA62 /* Sources */,
+				2F39BCA02758292B00B5AA62 /* Frameworks */,
+				2F39BCA12758292B00B5AA62 /* Resources */,
+				2F39BCCF27582D6A00B5AA62 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F39BCE7275868CB00B5AA62 /* PBXTargetDependency */,
+			);
+			name = trebuchet;
+			productName = trebuchet;
+			productReference = 2F39BCA32758292B00B5AA62 /* trebuchet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F39BCDA275868CB00B5AA62 /* Fling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F39BCE9275868CB00B5AA62 /* Build configuration list for PBXNativeTarget "Fling" */;
+			buildPhases = (
+				2F39BCD7275868CB00B5AA62 /* Sources */,
+				2F39BCD8275868CB00B5AA62 /* Frameworks */,
+				2F39BCD9275868CB00B5AA62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fling;
+			productName = Fling;
+			productReference = 2F39BCDB275868CB00B5AA62 /* Fling.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F39BC9B2758292B00B5AA62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					2F39BCA22758292B00B5AA62 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					2F39BCDA275868CB00B5AA62 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 2F39BC9E2758292B00B5AA62 /* Build configuration list for PBXProject "trebuchet" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F39BC9A2758292B00B5AA62;
+			productRefGroup = 2F39BCA42758292B00B5AA62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F39BCA22758292B00B5AA62 /* trebuchet */,
+				2F39BCDA275868CB00B5AA62 /* Fling */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F39BCA12758292B00B5AA62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F39BCAB2758292C00B5AA62 /* Assets.xcassets in Resources */,
+				2F39BCAE2758292C00B5AA62 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F39BCD9275868CB00B5AA62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F39BCE3275868CB00B5AA62 /* ShareViewController.xib in Resources */,
+				2F39BCDE275868CB00B5AA62 /* icon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F39BC9F2758292B00B5AA62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F39BCA92758292B00B5AA62 /* ViewController.swift in Sources */,
+				2F39BCA72758292B00B5AA62 /* AppDelegate.swift in Sources */,
+				2F39BCD527583C1D00B5AA62 /* Keychain.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F39BCD7275868CB00B5AA62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F39BCE0275868CB00B5AA62 /* ShareViewController.swift in Sources */,
+				2F39BCF0275868F500B5AA62 /* Keychain.swift in Sources */,
+				2F39BCEF275868E100B5AA62 /* Error.swift in Sources */,
+				2F39BCED275868D700B5AA62 /* Net.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F39BCE7275868CB00B5AA62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F39BCDA275868CB00B5AA62 /* Fling */;
+			targetProxy = 2F39BCE6275868CB00B5AA62 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F39BCAC2758292C00B5AA62 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F39BCAD2758292C00B5AA62 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F39BCE1275868CB00B5AA62 /* ShareViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F39BCE2275868CB00B5AA62 /* Base */,
+			);
+			name = ShareViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F39BCB02758292C00B5AA62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					x86_64,
+					arm64,
+				);
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2F39BCB12758292C00B5AA62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2F39BCB32758292C00B5AA62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = trebuchet/trebuchet.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8YT6PUV8XN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = surf.puppy.trebuchet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2F39BCB42758292C00B5AA62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = trebuchet/trebuchet.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8YT6PUV8XN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = surf.puppy.trebuchet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2F39BCEA275868CB00B5AA62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Fling/Fling.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8YT6PUV8XN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fling/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Fling;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = surf.puppy.trebuchet.Fling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2F39BCEB275868CB00B5AA62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Fling/Fling.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8YT6PUV8XN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fling/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Fling;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = surf.puppy.trebuchet.Fling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F39BC9E2758292B00B5AA62 /* Build configuration list for PBXProject "trebuchet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F39BCB02758292C00B5AA62 /* Debug */,
+				2F39BCB12758292C00B5AA62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F39BCB22758292C00B5AA62 /* Build configuration list for PBXNativeTarget "trebuchet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F39BCB32758292C00B5AA62 /* Debug */,
+				2F39BCB42758292C00B5AA62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F39BCE9275868CB00B5AA62 /* Build configuration list for PBXNativeTarget "Fling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F39BCEA275868CB00B5AA62 /* Debug */,
+				2F39BCEB275868CB00B5AA62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F39BC9B2758292B00B5AA62 /* Project object */;
+}
